@@ -15,27 +15,24 @@ layout: default
         </div>
       </div>
 
+      <div class="separator m-b-3"></div>
+
+
   <h2 class="text-xs-center">
     Posts you will find in _post/ directory
   </h2>
 
 
-  <div class="separator m-b-3"></div>
+  <div class="separator m-b-1"></div>
 
-  <div class="row">
-    <div class="col-md-4">
-    </div>
-    <div class="col-md-4">
-      <ul class="post-list">
+  <div class="w-100 ">
+    <ul class="post-list m-x-auto" style="width:250px;">
       {% for post in site.posts %}
-        <li>
-          <a class="post-link lead" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </li>
+      <li>
+        <a class="post-link lead" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+      </li>
       {% endfor %}
-      </ul>
-   </div>
-    <div class="col-md-4">
-    </div>
+    </ul>
   </div>
 
   <div class="separator m-b-3"></div>
