@@ -1,7 +1,7 @@
 {
-  "name": "impatient-jekyll",
+  "name": "jekyll-bootstrap4",
   "version": "0.0.0",
-  "description": "A starter project including full setup for Jekyll 3, GulpJS, SASS, BrowserSync, and Github pages",
+  "description": "A starter project based on impatient-jekyll, integrating bootstrap4 into jekyll3",
   "main": "gulpfile.js",
   "engines" : { "node" : "~4.1.2", "npm":"~3.7.5" },
   "scripts": {
@@ -26,10 +26,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/davidb583/impatient-jekyll.git"
+    "url": "https://github.com/davidb583/jekyll-bootstrap4.git"
   },
   "keywords": [
     "jekyll",
+    "bootstrap",
     "gulp",
     "sass",
     "js",
@@ -37,5 +38,5 @@
     "github",
     "googlepagespeed"
   ],
-  "homepage": "https://github.com/davidb583/impatient-jekyll/"
+  "homepage": "https://github.com/davidb583/jekyll-bootstrap4/"
 }
