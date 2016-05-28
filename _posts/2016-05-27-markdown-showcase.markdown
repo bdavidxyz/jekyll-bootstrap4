@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Showcase"
+title:  "Mardown Showcase"
 date:   2016-05-26 15:18:26 +0200
 categories: bootstrap markdown
 ---

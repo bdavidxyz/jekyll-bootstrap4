@@ -11,50 +11,37 @@ layout: default
           <p class="lead"> Jekyll with Bootstrap4 SASS sources. Use it as a starting point to create something more unique.</p>
           <p class="lead"> Work fast : a local livereload occurs each time you change a JS, CSS or HTML file. Production-ready for GitHub pages.</p>
           <div class="separator m-b-3"></div>
-          <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more »</a></p>
+          <p><a class="btn btn-primary btn-lg" href="#" role="button">View docs and demo »</a></p>
         </div>
       </div>
 
+  <h2 class="text-xs-center">
+    Posts you will find in _post/ directory
+  </h2>
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
 
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
+  <div class="separator m-b-3"></div>
 
-  <div class="container">
-        <!-- Example row of columns -->
-        <div class="row">
-          <div class="col-md-4">
-            <h2>Heading</h2>
-            <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-            <p><a class="btn btn-secondary" href="#" role="button">View details »</a></p>
-          </div>
-          <div class="col-md-4">
-            <h2>Heading</h2>
-            <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-            <p><a class="btn btn-secondary" href="#" role="button">View details »</a></p>
-         </div>
-          <div class="col-md-4">
-            <h2>Heading</h2>
-            <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-            <p><a class="btn btn-secondary" href="#" role="button">View details »</a></p>
-          </div>
-        </div>
+  <div class="row">
+    <div class="col-md-4">
+    </div>
+    <div class="col-md-4">
+      <ul class="post-list">
+      {% for post in site.posts %}
+        <li>
+          <a class="post-link lead" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+        </li>
+      {% endfor %}
+      </ul>
+   </div>
+    <div class="col-md-4">
+    </div>
+  </div>
 
-        <hr>
+  <div class="separator m-b-3"></div>
 
-        <footer>
-          <p>© Company 2015</p>
-        </footer>
-      </div>
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+
+
 
 </div>
